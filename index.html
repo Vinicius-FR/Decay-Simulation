@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decay Simulation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simulador de Decaimento Radioativo</h2>
+        <h4>por Vinícius F. Rodrigues</h4>
+        <br></br>
+        <div class="form-container">
+            <form>
+                <label for="initialAtoms">Átomos Iniciais:</label>
+                <input type="number" id="initialAtoms" required>
+                <br>
+                <label for="intervalTime">Intervalo de Tempo entre Iterações:</label>
+                <input type="number" id="intervalTime" step="0.1" required>
+                <br>
+                <button type="button" onclick="startSimulation()">Começar</button>
+            </form>
+        </div>
+        <div id="countdown"></div>
+        <div id="timer" style="display: none;">
+            <p>Tempo: <span id="currentTime">0</span></p>
+            <p>Átomos: <span id="currentAtoms">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
